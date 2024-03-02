@@ -1,23 +1,23 @@
-Connection: keep-alive\
-Content-Length: 393\
-Server: GitHub.com\
-Content-Type: text/html; charset=utf-8\
-permissions-policy: interest-cohort=()\
-Last-Modified: Fri, 01 Mar 2024 22:55:53 GMT\
-Access-Control-Allow-Origin: *\
-ETag: W/"65e25cf9-3eb"\
-expires: Fri, 01 Mar 2024 23:12:23 GMT\
-Cache-Control: max-age=600\
-Content-Encoding: gzip\
-x-proxy-cache: MISS\
-X-GitHub-Request-Id: 4C0E:4E53:6B322C:83D73C:65E25E7F\
-Accept-Ranges: bytes\
-Date: Fri, 01 Mar 2024 23:02:31 GMT\
-Via: 1.1 varnish\
-Age: 8\
-X-Served-By: cache-ewr18149-EWR\
-X-Cache: HIT\
-X-Cache-Hits: 1\
-X-Timer: S1709334152.683158,VS0,VE14\
-Vary: Accept-Encoding\
-X-Fastly-Request-ID: a68957ded35c4dde3dd55ce830388e0a8453d34c\
+Connection: keep-alive \
+Content-Length: 380 \
+Server: GitHub.com \
+Content-Type: text/html; charset=utf-8 \
+permissions-policy: interest-cohort=() \
+Last-Modified: Sat, 02 Mar 2024 10:59:25 GMT \
+Access-Control-Allow-Origin: * \
+ETag: W/"65e3068d-3fa" \
+expires: Sat, 02 Mar 2024 16:06:11 GMT \
+Cache-Control: max-age=600 \
+Content-Encoding: gzip \
+x-proxy-cache: MISS \
+X-GitHub-Request-Id: AA4C:A5A7B:11BE2F:18D7AF:65E34C1A \
+Accept-Ranges: bytes \
+Date: Sat, 02 Mar 2024 15:56:11 GMT \
+Via: 1.1 varnish \
+Age: 0 \
+X-Served-By: cache-ewr18131-EWR \
+X-Cache: MISS \
+X-Cache-Hits: 0 \
+X-Timer: S1709394971.064662,VS0,VE27 \
+Vary: Accept-Encoding \
+X-Fastly-Request-ID: 78aaecbabc7e67fc03b92e2c59568b1526d65873 \
