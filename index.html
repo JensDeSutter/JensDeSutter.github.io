@@ -2,6 +2,7 @@
     @prefix foaf: <http://xmlns.com/foaf/0.1/>.
     @prefix xsd: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
     @prefix schema: <https://schema.org/>.
+    @prefix photo: <https://jensdesutter.github.io/vocab/#>.
     <https://JensDeSutter.github.io/#me>    foaf:name "Jens De Sutter"^^xsd:string;
                                             foaf:gender "male"^^xsd:string;
                                             schema:birthDate "2000-05-22"^^xsd:date;
@@ -10,4 +11,20 @@
                                             foaf:mbox "jens.desutter@ugent.be"^^xsd:string;
                                             schema:attendee <https://pietercolpaert.be/teaching/kg/#2023-2024>;
                                             foaf:knows <https://colada.be/#me>, <https://users.ugent.be/~odlmarce/rdf#me>, <https://razoreater.github.io/iam/#me>.
+    
+	<https://avatars.githubusercontent.com/u/17456812?v=4> a photo:photo;
+															photo:depicts <https://JensDeSutter.github.io/#me>;
+															photo:title "Recent photo of Jens De Sutter"^^xsd:string;
+															photo:name "Jens De Sutter"^^xsd:string; 
+															photo:horizontalResolution "460"^^xsd:integer;
+															photo:verticalResolution "460"^^xsd:integer;
+															photo:creationDate "2022-07-05"^^xsd:date.
+
+	<https://lh5.googleusercontent.com/B4Ai7t4SVS0HZgNmkGthud6zl3NkrawRGxFNyXXTDqEORbSUfHxJZ3vuCWUkVU-xAPoso4jURBqSXZGv8bQBKKI=w1280> a photo:photo;
+																																	photo:depicts <https://JensDeSutter.github.io/#me>;
+																																	photo:title "Old photo of Jens De Sutter"^^xsd:string;
+																																	photo:name "Jens De Sutter"^^xsd:string; 
+																																	photo:horizontalResolution "695"^^xsd:integer;
+																																	photo:verticalResolution "695"^^xsd:integer;
+																																	photo:creationDate "2018-04-12"^^xsd:date. 
 </script>
