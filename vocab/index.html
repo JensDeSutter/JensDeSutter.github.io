@@ -16,7 +16,7 @@
 		rdfs:subPropertyOf foaf:depicts;
 		rdfs:comment "Indicates a photo of a person.";
 		rdfs:label "depicts";
-		rdfs:domain photo:photo;
+		rdfs:domain photo:Photo;
 		rdfs:range foaf:Person;
 		owl:inverseOf photo:depicted.
 
@@ -26,14 +26,14 @@
 		rdfs:comment "Indicates a person depicted in a photo.";
 		rdfs:label "depiction";
 		rdfs:domain foaf:Person;
-		rdfs:range photo:photo; 
+		rdfs:range photo:Photo; 
 		owl:inverseOf photo:depicts.
 
 	photo:title
 		a rdf:Property, owl:DatatypeProperty;
 		rdfs:comment "Title of a photo.";
 		rdfs:label "title";
-		rdfs:domain photo:photo;
+		rdfs:domain photo:Photo;
 		rdfs:range rdfs:Literal.
 
 	photo:name 
@@ -41,27 +41,27 @@
 		rdfs:subClassOf foaf:name;
 		rdfs:comment "Name of person depicted in a photo.";
 		rdfs:label "name";
-		rdfs:domain photo:photo;
+		rdfs:domain photo:Photo;
 		rdfs:range rdfs:Literal.
 
 	photo:horizontalResolution
 		a rdf:Property, owl:DatatypeProperty;
 		rdfs:comment "Horizontal resolution of a photo (in pixels).";
 		rdfs:label "horizontal resolution";
-		rdfs:domain photo:photo;
+		rdfs:domain photo:Photo;
 		rdfs:range rdfs:Literal.
 
 	photo:verticalResolution
 		a rdf:Property, owl:DatatypeProperty;
 		rdfs:comment "Vertical resolution of a photo (in pixels).";
 		rdfs:label "vertical resolution";
-		rdfs:domain photo:photo;
+		rdfs:domain photo:Photo;
 		rdfs:range rdfs:Literal.
 
 	photo:creationDate
 		a rdf:Property, owl:DatatypeProperty;
 		rdfs:comment "Date on which a photo was created (YYYY-MM-DD).";
 		rdfs:label "date";
-		rdfs:domain photo:photo;
+		rdfs:domain photo:Photo;
 		rdfs:range rdfs:Literal.
 </script>
