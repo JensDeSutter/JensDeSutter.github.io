@@ -1,0 +1,67 @@
+<script type="text/turtle">
+	@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+	@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+	@prefix owl: <http://www.w3.org/2002/07/owl#>.
+	@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+	@prefix photo: <https://example.org/photo/#>.
+
+	photo:photo 
+		a rdfs:Class, owl:Class;
+		rdfs:subClassOf foaf:image;
+		rdfs:comment "A photo of a single person";
+		rdfs:label "photo".
+
+	photo:depicts
+		a rdf:Property, owl:ObjectProperty, owl:FunctionalProperty;
+		rdfs:subPropertyOf foaf:depicts;
+		rdfs:comment "Indicates a photo of a person.";
+		rdfs:label "depicts";
+		rdfs:domain photo:photo;
+		rdfs:range foaf:Person;
+		owl:inverseOf photo:depicted.
+
+	photo:depiction
+		a rdf:Property, owl:ObjectProperty, owl:InverseFunctionalProperty;
+		rdfs:subPropertyOf foaf:depiction;
+		rdfs:comment "Indicates a person depicted in a photo.";
+		rdfs:label "depiction";
+		rdfs:domain foaf:Person;
+		rdfs:range photo:photo; 
+		owl:inverseOf photo:depicts.
+
+	photo:title
+		a rdf:Property, owl:DatatypeProperty;
+		rdfs:comment "Title of a photo.";
+		rdfs:label "title";
+		rdfs:domain photo:photo;
+		rdfs:range rdfs:Literal.
+
+	photo:name 
+		a rdf:Property, owl:DatatypeProperty, owl:FunctionalProperty;
+		rdfs:subClassOf foaf:name;
+		rdfs:comment "Name of person depicted in a photo.";
+		rdfs:label "name";
+		rdfs:domain photo:photo;
+		rdfs:range rdfs:Literal.
+
+	photo:horizontalResolution
+		a rdf:Property, owl:DatatypeProperty;
+		rdfs:comment "Horizontal resolution of a photo (in pixels).";
+		rdfs:label "horizontal resolution";
+		rdfs:domain photo:photo;
+		rdfs:range rdfs:Literal.
+
+	photo:verticalResolution
+		a rdf:Property, owl:DatatypeProperty;
+		rdfs:comment "Vertical resolution of a photo (in pixels).";
+		rdfs:label "vertical resolution";
+		rdfs:domain photo:photo;
+		rdfs:range rdfs:Literal.
+
+	photo:creationDate
+		a rdf:Property, owl:DatatypeProperty;
+		rdfs:comment "Date on which a photo was created (YYYY-MM-DD).";
+		rdfs:label "date";
+		rdfs:domain photo:photo;
+		rdfs:range rdfs:Literal.
+</script>
