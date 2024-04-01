@@ -1,0 +1,43 @@
+@prefix cv: <http://data.europa.eu/m8g/>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix opcountry: <http://publications.europa.eu/resource/authority/country/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix ldes: <https://w3id.org/ldes#>.
+@prefix tree: <https://w3id.org/tree#>.
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+
+<https://jensdesutter.github.io/ldes> a ldes:EventStream;
+    ldes:timestampPath dct:modified;
+    ldes:versionOfPath dct:isVersionOf;
+    tree:member <https://jensdesutter.github.io/#me_v0>, <https://jensdesutter.github.io/#me_v1>.
+
+<https://jensdesutter.github.io/#me_v0> a person:Person;
+    person:brithName "Jens De Sutter"@nl;
+    cv:domicile <https://address.belgium.co/address/01>;
+    person:residency [
+        a dct:Jurisdiction;
+        dct:id opcountry:BE;
+        rdfs:label "Belgium"@en
+    ];
+    dct:modified "2000-05-22T06:00:00.000Z"^^xsd:dateTime.
+
+<https://address.belgium.co/address/01> a locn:Address;
+    locn:fullAddress "Dorpstraat 17, 9340";
+    locn:postName "Lede"@nl.
+
+<https://jensdesutter.github.io/#me_v1> a person:Person;
+    person:brithName "Jens De Sutter"@nl;
+    cv:domicile <https://address.france.co/address/02>;
+    person:residency [
+        a dct:Jurisdiction;
+        dct:id opcountry:FR;
+        rdfs:label "France"@fr
+    ];
+    dct:modified "2008-07-11T00:33:00.000Z"^^xsd:dateTime.
+
+<https://address.france.co/address/02> a locn:Address;
+    locn:fullAddress "Rue du bois 34, 75003";
+    locn:postName "Paris"@fr.
